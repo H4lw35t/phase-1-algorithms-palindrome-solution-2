@@ -1,6 +1,16 @@
 function isPalindrome(word) {
   // Write your algorithm here
+
+  const strRev = [...word].reverse().join("");
+
+  if (word === strRev) return true;
+  else return false;
 }
+isPalindrome("abba");
+isPalindrome("racecar");
+isPalindrome("a");
+isPalindrome("robot");
+isPalindrome("ab");
 
 /* 
   Add your pseudocode here
